@@ -11,16 +11,14 @@ body, .navbar a {
 
 .parallelogram {
 	width: 100px;
-	height: 100%;
 	transform: skew(-45deg);
 	background: #555;
 }
-.navbar .parallelogram {
+.navbar .parallelogram, .footer .parallelogram {
 	position: absolute;
 	background: #222;
+	height: 100%;
 }
-
-
 
 
 .navbar {
@@ -28,7 +26,7 @@ body, .navbar a {
 	top: 0px;
 	display: flex;
 	justify-content: center;
-	background: #141414;
+	background-color: #141414;
 	border-bottom: 6px solid #222;
 	z-index: 10;
 	
@@ -40,19 +38,22 @@ body, .navbar a {
 .nav-social, .nav-left {
 	width: 20%;
 }
-.nav-left {
+.nav-left > .parallelogram {
 	z-index: -10;
+}
+.nav-left > a {
+	position: absolute;
 }
 .nav-social ul {
 	justify-content: flex-end;
 }
-.navbar ul {
+.navbar ul, .social ul {
 	display: flex;
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 }
-.navbar a {
+.navbar a, .social a {
 	display: block;
 	text-align: center;
 	padding: 14px;
@@ -63,11 +64,32 @@ body, .navbar a {
 	gap: 70px;
 	justify-content: center;
 }
-.nav-social img {
+.nav-social img, .social img {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
 }
 
+
+
+
+.footer {
+	background-color: #141414;
+	border-top: 6px solid #222;
+	text-align: center;
+}
+.footer, .footer .parallelogram {
+	height: 14rem;
+}
+.footer-center {
+	width: 80%;
+	margin: auto;
+}
+.footer .social {
+	margin: auto;
+}
+.social ul {
+	justify-content: center;
+}
 
 
 
@@ -104,7 +126,7 @@ body, .navbar a {
 	width: 80rem;
 	margin: 0rem auto 3rem auto;
 	clear: left;
-	background-color: #222;
+	background-color: #141414;
 	height: 20rem;
 }
 .pitch-img {
