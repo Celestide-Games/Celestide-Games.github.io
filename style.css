@@ -1,0 +1,123 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Poppins, Verdana, sans-serif;
+	background-color: #000;
+}
+
+body, .navbar a {
+	color: white;
+}
+
+.parallelogram {
+	width: 100px;
+	height: 100%;
+	transform: skew(-45deg);
+	background: #555;
+}
+.navbar .parallelogram {
+	position: absolute;
+	background: #222;
+}
+
+
+
+
+.navbar {
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	background: #141414;
+	border-bottom: 6px solid #222;
+	z-index: 10;
+	
+	font-size: 1.2em;
+}
+.nav-center {
+	flex-grow: 1;
+}
+.nav-social, .nav-left {
+	width: 20%;
+}
+.nav-left {
+	z-index: -10;
+}
+.nav-social ul {
+	justify-content: flex-end;
+}
+.navbar ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.navbar a {
+	display: block;
+	text-align: center;
+	padding: 14px;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+.nav-center ul {
+	gap: 70px;
+	justify-content: center;
+}
+.nav-social img {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+
+
+
+.main-image {
+	height: calc(100vh - 55px);
+	background-image: url("main-image.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.title {
+	font-family: "Papyrus";
+	font-size: 14vh;
+	text-align: center;
+	text-shadow: 0px 0px 1rem black;
+	
+	width: 90vw;
+	position: absolute;
+	left: calc(50% - 45vw);
+	top: calc(40vh);
+}
+.title hr {
+	border: 0px;
+	width: 70%; 
+	height: 0.4vh; 
+	background-color: white;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+
+.pitch {
+}
+.pitch-entry {
+	width: 80rem;
+	margin: 0rem auto 3rem auto;
+	clear: left;
+	background-color: #222;
+	height: 20rem;
+}
+.pitch-img {
+	width: 40rem;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.pitch-text {
+	width: 34rem;
+	height: 14rem;
+	padding: 3rem;
+}
+.pitch-text > h1 {
+	margin: 0rem 0rem 2rem 0rem;
+}
