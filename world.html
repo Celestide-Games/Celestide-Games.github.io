@@ -5,6 +5,7 @@
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="characters.css">
 <link rel="stylesheet" href="world.css">
 
 <title>Celestide Games</title>
@@ -180,6 +181,119 @@
 </div>
 
 
+<div>
+	<div class="race-line">
+		<div class="race">
+			<div class="race-img"></div>
+			<div class="race-name">Humans<hr></div>
+			<p>Some flavor text for a race.<br>Some flavor text.</p>
+		</div>
+		<div class="race">
+			<div class="race-img"></div>
+			<div class="race-name">Iminarri<hr></div>
+			<p>Some flavor text for a race.<br>Some flavor text.</p>
+		</div>
+		<div class="race">
+			<div class="race-img"></div>
+			<div class="race-name">Celestials<hr></div>
+			<p>Some flavor text for a race.<br>Some flavor text.</p>
+		</div>
+	</div>
+	<div class="race-line">
+		<div class="race">
+			<div class="race-img"></div>
+			<div class="race-name">Ancient technology<hr></div>
+			<p>Some flavor text for a race.<br>Some flavor text.</p>
+		</div>
+		<div class="race">
+			<div class="race-img"></div>
+			<div class="race-name">Consumed<hr></div>
+			<p>Some flavor text for a race.<br>Some flavor text.</p>
+		</div>
+		<div class="race">
+			<div class="race-img"></div>
+			<div class="race-name">Beasts<hr></div>
+			<p>Some flavor text for a race.<br>Some flavor text.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slideshow-container">
+	<div class="slide">
+		<img src="Units/Shepherd Swing.gif">
+		<div class="char-title">Shepherd</div>
+		<div class="char-desc">Human</div>
+	</div>
+	
+	<div class="slide">
+		<img src="Units/Bear Bite.gif">
+		<div class="char-title">Bear</div>
+		<div class="char-desc">Beast</div>
+	</div>
+
+	<div class="slide">
+		<img src="Units/Stumpie Spit.gif">
+		<div class="char-title">Stumpie</div>
+		<div class="char-desc">Beast</div>
+	</div>
+	
+	<div class="slide">
+		<img src="Units/Crimson Snail Shell Idle.gif">
+		<div class="char-title">Crimson Snail</div>
+		<div class="char-desc">Consumed</div>
+	</div>
+	
+	<div class="slide">
+		<img src="Units/Sibyl Idle.gif">
+		<div class="char-title">Sibyl</div>
+		<div class="char-desc">Consumed</div>
+	</div>
+	
+	<div class="slide">
+		<img src="Units/Lotus Eater Bite.gif">
+		<div class="char-title">Lotus Eater</div>
+		<div class="char-desc">Consumed</div>
+	</div>
+
+	<div class="slide">
+		<img src="Units/Orb Crawler Slam.gif">
+		<div class="char-title">Orb Crawler</div>
+		<div class="char-desc">Celestial technology</div>
+	</div>
+
+	<div class="slide">
+		<img src="Units/Orbling Walk.gif">
+		<div class="char-title">Orb Crawler</div>
+		<div class="char-desc">Celestial technology</div>
+	</div>
+
+	<div class="slide">
+		<img src="Units/Iminarri Warrior Infernal Claw.gif">
+		<div class="char-title">Iminarri Warrior Infernal</div>
+		<div class="char-desc">Iminarri</div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1);" style="background-image: url('Units/Shepherd.png')"></span>
+	<span class="dot" onclick="currentSlide(2);" style="background-image: url('Units/Bear.png')"></span>
+	<span class="dot" onclick="currentSlide(3);" style="background-image: url('Units/Stumpie.png')"></span>
+	<span class="dot" onclick="currentSlide(4);" style="background-image: url('Units/Crimson Snail.png')"></span>
+	<span class="dot" onclick="currentSlide(5);" style="background-image: url('Units/Sibyl.png')"></span>
+	<span class="dot" onclick="currentSlide(6);" style="background-image: url('Units/Lotus Eater.png')"></span>
+	<span class="dot" onclick="currentSlide(7);" style="background-image: url('Units/Orb Crawler.png')"></span>
+	<span class="dot" onclick="currentSlide(8);" style="background-image: url('Units/Orbling.png')"></span>
+	<span class="dot" onclick="currentSlide(9);" style="background-image: url('Units/Iminarri Warrior Infernal.png')"></span>
+</div>
+
+
+
 
 <footer class="footer">
 	<div class="parallelogram" style="left: 30px;"></div>
@@ -219,6 +333,35 @@ function selectLocation(loc) {
 			infos[i].style.display = "none";
 		}
 	}
+}
+</script>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	let i;
+	let slides = document.getElementsByClassName("slide");
+	let dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";  
+	dots[slideIndex-1].className += " active";
 }
 </script>
 </body>

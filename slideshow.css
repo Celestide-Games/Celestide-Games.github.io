@@ -1,7 +1,5 @@
-* {box-sizing:border-box}
-
 .slideshow-container {
-	width: 95vw;
+	width: 100%;
 	height: 83vh;
 	position: relative;
 	margin: auto;
@@ -53,7 +51,7 @@
 	background-size: cover;
 }
 
-.active, .dot:hover {
+.dot.active, .dot:hover {
 	border: 3px solid #5C4F90;
 	background-color: #222;
 }
