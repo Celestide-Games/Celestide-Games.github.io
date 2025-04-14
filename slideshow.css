@@ -1,0 +1,91 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+	width: 95vw;
+	height: 83vh;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.char-slide {
+	height: 100%;
+	display: none;
+	overflow: hidden;
+	text-align: right;
+}
+.char-slide img {
+	height: 180%;
+	margin-right: 10%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.char-title {
+	font-size: 10em;
+	font-family: "Papyrus";
+	position: absolute;
+	top: 6rem;
+	right: 54%;
+	text-align: right;
+}
+.char-desc {
+	color: white;
+	font-size: 2.6em;
+	position: absolute;
+	top: 30rem;
+	right: 50%;
+	text-align: right;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 5rem;
+	width: 5rem;
+	margin: 0 2px;
+	background-color: #141414;
+	border-radius: 50%;
+	display: inline-block;
+	background-position: top;
+	background-size: cover;
+}
+
+.active, .dot:hover {
+	border: 3px solid #5C4F90;
+	background-color: #222;
+}
+
+.slide-in {
+	animation-name: slideIn;
+	animation-duration: 0.3s;
+}
+
+@keyframes slideIn {
+	from {margin-right: 3%}
+	to {margin-right: 10%}
+}
