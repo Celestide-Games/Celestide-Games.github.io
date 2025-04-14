@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="world.css">
+
+<title>Celestide Games</title>
+<link rel="icon" type="image/x-icon" href="logo-celestide.svg">
+
+</head>
+
+<body>
+<nav = class="navbar">
+	<div class="nav-left">
+		<a href="index.html">Home</a>
+		<div class="parallelogram" style="left: 30px;"></div>
+		<div class="parallelogram" style="left: 20px; background-color: #141414;"></div>
+		<div class="parallelogram" style="left: 0px;"></div>
+		<div class="parallelogram" style="left: -20px; background-color: #141414;"></div>
+		<div class="parallelogram" style="left: -40px;"></div>
+	</div>
+	<div class="nav-center">
+		<ul>
+			<li><a href="world.html">World</a></li>
+			<li><a href="characters.html">Characters</a></li>
+			<!--li><a href="">News</a></li-->
+		</ul>
+	</div>
+	<div class="nav-social">
+		<ul>
+			<li><a href="https://x.com/celestideg98436" target="_blank"><img src="logo-x.svg" alt="X", width=20px height=20px></a></li>
+			<li><a href="https://www.youtube.com/@CelestideGames", target="_blank"><img src="logo-youtube.svg" alt="Youtube", width=20px height=20px></a></li>
+			<li><a href="https://discord.gg/B5eSkQeYaP" target="_blank"><img src="logo-discord.svg" alt="Discord", width=20px height=20px></a></li>
+		</ul>
+	</div>
+</nav>
+
+
+
+<div class="map">
+	<div class="location-info">
+		<span class="location-name">Mountain Village</span>
+		<br>
+		<span class="location-desc">Solitary shepherd village deep in the snowy mountains</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Black Market City</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Tourist City</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Lake Town</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Gate Town</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Port City</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Hibana</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Atoll</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Celestial Cities</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Stargazer City</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Launch Point</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Sunken Crucible</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Mining Colony</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Celestial Construction Yard</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Iminarra</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Mystical Forest</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Abondoned Colonies</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Sun Scraper</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">City of Knowledge</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Mind Growth</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Dead Forest</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	<div class="location-info">
+		<span class="location-name">Consumed Grove</span>
+		<br>
+		<span class="location-desc">Description</span>
+	</div>
+	
+	
+	<div class="location" onclick="selectLocation('Mountain Village');" style="left:46%; top:16%;"></div>
+	<div class="location" onclick="selectLocation('Black Market City');" style="left:56%; top:23%;"></div>
+	<div class="location" onclick="selectLocation('Tourist City');" style="left:70%; top:31%;"></div>
+	<div class="location" onclick="selectLocation('Lake Town');" style="left:43%; top:27%;"></div>
+	<div class="location" onclick="selectLocation('Gate Town');" style="left:30%; top:38%;"></div>
+	<div class="location" onclick="selectLocation('Port City');" style="left:64.5%; top:42%;"></div>
+	<div class="location" onclick="selectLocation('Hibana');" style="left:79%; top:25%;"></div>
+	<div class="location" onclick="selectLocation('Atoll');" style="left:90.6%; top:29%;"></div>
+	<div class="location" onclick="selectLocation('Celestial Cities');" style="left:89%; top:6%;"></div>
+	<div class="location" onclick="selectLocation('Stargazer City');" style="left:41%; top:54%;"></div>
+	<div class="location" onclick="selectLocation('Launch Point');" style="left:13.5%; top:56%;"></div>
+	<div class="location" onclick="selectLocation('Sunken Crucible');" style="left:48%; top:64%;"></div>
+	<div class="location" onclick="selectLocation('Mining Colony');" style="left:26%; top:52%;"></div>
+	<div class="location" onclick="selectLocation('Celestial Construction Yard');" style="left:21%; top:57.3%;"></div>
+	<div class="location" onclick="selectLocation('Iminarra');" style="left:21%; top:68%;"></div>
+	<div class="location" onclick="selectLocation('Mystical Forest');" style="left:10%; top:21%;"></div>
+	<div class="location" onclick="selectLocation('Abondoned Colonies');" style="left:10%; top:40%;"></div>
+	<div class="location" onclick="selectLocation('Sun Scraper');" style="left:82%; top:62%;"></div>
+	<div class="location" onclick="selectLocation('City of Knowledge');" style="left:82%; top:54%;"></div>
+	<div class="location" onclick="selectLocation('Mind Growth');" style="left:86%; top:77%;"></div>
+	<div class="location" onclick="selectLocation('Dead Forest');" style="left:44%; top:73.5%;"></div>
+	<div class="location" onclick="selectLocation('Consumed Grove');" style="left:52%; top:34.5%;"></div>
+	
+	<img src="World map.png"  onClick="selectLocation('');">
+</div>
+
+
+
+<footer class="footer">
+	<div class="parallelogram" style="left: 30px;"></div>
+	<div class="parallelogram" style="left: 20px; background-color: #141414;"></div>
+	<div class="parallelogram" style="left: 0px;"></div>
+	<div class="parallelogram" style="left: -20px; background-color: #141414;"></div>
+	<div class="parallelogram" style="left: -40px;"></div>
+	<div class="parallelogram" style="left: -80px; background-color: #141414;"></div>
+	<div class="parallelogram" style="left: -120px;"></div>
+	<div class="parallelogram" style="left: -160px;"></div>
+	
+	<div class="footer-center">
+		<div class="social">
+			<ul>
+				<li><a href="https://x.com/celestideg98436" target="_blank"><img src="logo-x.svg" alt="X", width=20px height=20px></a></li>
+				<li><a href="https://www.youtube.com/@CelestideGames", target="_blank"><img src="logo-youtube.svg" alt="Youtube", width=20px height=20px></a></li>
+				<li><a href="https://discord.gg/B5eSkQeYaP" target="_blank"><img src="logo-discord.svg" alt="Discord", width=20px height=20px></a></li>
+			</ul>
+		</div>
+		<img src="logo-celestide-text.svg">
+	</div>
+</footer>
+
+
+
+<script>
+function selectLocation(loc) {
+	let locations = document.getElementsByClassName("location");
+	let infos = document.getElementsByClassName("location-info");
+	for (i = 0; i < infos.length; i++) {
+		if (infos[i].getElementsByClassName("location-name")[0].textContent == loc) {
+			locations[i].className += " active";
+			infos[i].style.display = "block";
+		}
+		else {
+			locations[i].className = locations[i].className.replace(" active", "");
+			infos[i].style.display = "none";
+		}
+	}
+}
+</script>
+</body>
+</html>

@@ -5,6 +5,7 @@
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="characters.css">
 
 <title>Celestide Games</title>
 <link rel="icon" type="image/x-icon" href="logo-celestide.svg">
@@ -23,7 +24,7 @@
 	</div>
 	<div class="nav-center">
 		<ul>
-			<li><a href="">World</a></li>
+			<li><a href="world.html">World</a></li>
 			<li><a href="characters.html">Characters</a></li>
 			<!--li><a href="">News</a></li-->
 		</ul>
@@ -40,40 +41,40 @@
 
 
 <div class="slideshow-container">
-	<div class="char-slide">
+	<div class="slide">
 		<img src="Arashi Portrait Serious.png" class="slide-in">
 		<div class="char-title">Arashi</div>
-		<div class="char-desc">Half Iminarri</div>
+		<div class="char-desc">Defiant half-Iminarri</div>
 	</div>
 
-	<div class="char-slide">
+	<div class="slide">
 		<img src="Tomoko Portrait Serious.png" class="slide-in" style="margin-top:-8%">
 		<div class="char-title">Red</div>
 		<div class="char-desc">Wandering doctor</div>
 	</div>
 
-	<div class="char-slide">
+	<div class="slide">
 		<img src="Dante Portrait Serious.png" class="slide-in" style="margin-top:-6%">
 		<div class="char-title">Dante</div>
 		<div class="char-desc">Alchemist professor</div>
 	</div>
 
-	<div class="char-slide">
+	<div class="slide">
 		<img src="Estelle Portrait Serious.png" class="slide-in" style="margin-top:-6%">
 		<div class="char-title">Estelle</div>
-		<div class="char-desc">Cyborg rebel</div>
+		<div class="char-desc">Prodigious inventor</div>
 	</div>
 
-	<div class="char-slide">
+	<div class="slide">
 		<img src="Trace Portrait WIP.png" class="slide-in" style="margin-top:-8%">
 		<div class="char-title">Trace</div>
-		<div class="char-desc">Retired general</div>
+		<div class="char-desc">Atoning general</div>
 	</div>
 
-	<div class="char-slide">
+	<div class="slide">
 		<img src="Sin Portrait WIP.png" class="slide-in" style="margin-top:-5%">
 		<div class="char-title">Sin</div>
-		<div class="char-desc">Puppet master</div>
+		<div class="char-desc">Pacifist envoy</div>
 	</div>
 
 	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -130,19 +131,19 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("char-slide");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+	let i;
+	let slides = document.getElementsByClassName("slide");
+	let dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";  
+	dots[slideIndex-1].className += " active";
 }
 </script>
 </body>

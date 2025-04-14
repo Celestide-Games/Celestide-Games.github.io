@@ -1,0 +1,26 @@
+.char-title {
+	font-size: 10em;
+	font-family: "Papyrus";
+	position: absolute;
+	top: 6rem;
+	right: 54%;
+	text-align: right;
+}
+.char-desc {
+	color: white;
+	font-size: 2.6em;
+	position: absolute;
+	top: 30rem;
+	right: 50%;
+	text-align: right;
+}
+
+.slide-in {
+	animation-name: slideIn;
+	animation-duration: 0.3s;
+}
+
+@keyframes slideIn {
+	from {margin-right: 3%}
+	to {margin-right: 10%}
+}
