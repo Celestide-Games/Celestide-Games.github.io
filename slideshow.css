@@ -49,6 +49,7 @@
 	display: inline-block;
 	background-position: top;
 	background-size: cover;
+	border: 3px solid #000;
 }
 
 .dot.active, .dot:hover {
