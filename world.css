@@ -57,10 +57,42 @@
 	top: 6rem;
 }
 .char-desc {
-	width: 50%;
-	font-size: 2.6em;
-	top: 25rem;
+	right: 0;
+	font-size: 0.2em;
+	text-align: left;
+	font-family: Poppins, Verdana, sans-serif;
+	top: 14rem;
 }
+.char-title > div {
+	position:relative;
+	width: 28rem;
+	text-align: center;
+	margin: 0;
+	margin-left: auto;
+}
+.char-title hr {
+	margin: 1rem -20% 0 -20%;
+}
+.char-race {
+	width: 100%;
+	color: white;
+	font-size: 0.3em;
+	position: absolute;
+	top: -3rem;
+	right: 0%;
+	text-align: center;
+	font-family: Poppins, Verdana, sans-serif;
+}
+.char-name {
+	margin-left: -50%;
+	margin-right: -50%;
+	display: block;
+	height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .slideshow-container {
 	height: 60vh;
 	background-color: #141414;
