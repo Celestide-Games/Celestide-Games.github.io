@@ -41,8 +41,9 @@
 }
 
 .slide img {
-	height: 120%;
-	margin-right: 0;
+	height: 160%;
+	margin-top: -10rem;
+	margin-right: -10rem;
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 }
@@ -57,7 +58,8 @@
 	top: 6rem;
 }
 .char-desc {
-	right: 0;
+	width: 100%;
+	left: 0;
 	font-size: 0.2em;
 	text-align: left;
 	font-family: Poppins, Verdana, sans-serif;
@@ -97,8 +99,12 @@
 	height: 60vh;
 	background-color: #141414;
 }
+.dot {
+	background-size: 160%;
+	background-position: center;
+}
 
-.race-line {
+/*.race-line {
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -128,4 +134,4 @@
 }
 .race p {
 	font-size: 1.2em;
-}
+}*/
