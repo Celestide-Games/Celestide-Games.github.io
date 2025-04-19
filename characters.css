@@ -20,6 +20,10 @@
 	animation-duration: 0.3s;
 }
 
+.slideshow-container {
+	margin-top: calc(3rem + 6px);
+}
+
 @keyframes slideIn {
 	from {margin-right: 3%}
 	to {margin-right: 10%}

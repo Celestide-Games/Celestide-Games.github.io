@@ -4,6 +4,7 @@
 }
 .map {
 	position:relative;
+	margin-top: calc(3rem + 6px);
 }
 
 .location-info {
@@ -103,35 +104,3 @@
 	background-size: 160%;
 	background-position: center;
 }
-
-/*.race-line {
-	display: flex;
-	justify-content: space-evenly;
-}
-.race {
-	position: relative;
-	width: 28%;
-	height: 23rem;
-	text-align: center;
-	margin: 2rem;
-}
-.race-img {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-image: url("Logos/logo-celestide.svg");
-	background-position: center;
-	background-size: cover;
-	opacity: 0.1;
-}
-.race-name {
-	font-size: 2.7em;
-	font-family: "Papyrus";
-	margin-top: 4rem;
-}
-.race-name hr {
-	width: 50%; 
-}
-.race p {
-	font-size: 1.2em;
-}*/
