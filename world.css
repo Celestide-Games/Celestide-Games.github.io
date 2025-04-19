@@ -67,6 +67,7 @@
 	width: 50%;
 	font-size: 6em;
 	top: 6rem;
+	text-shadow: 0 0 0;
 }
 .char-desc {
 	width: 100%;
@@ -77,7 +78,7 @@
 	top: 14rem;
 }
 .char-title > div {
-	position:relative;
+	position: relative;
 	width: 28rem;
 	text-align: center;
 	margin: 0;
@@ -95,6 +96,7 @@
 	top: -3rem;
 	right: 0%;
 	text-align: center;
+	text-shadow: 0px 0px 1rem #DC62F4;
 }
 .char-name {
 	margin-left: -50%;
@@ -104,6 +106,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+	text-shadow: 0px 0px 1rem #DC62F4;
 }
 
 .slideshow-container {

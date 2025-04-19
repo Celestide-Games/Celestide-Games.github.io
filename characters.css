@@ -5,24 +5,26 @@
 	top: 6rem;
 	right: 54%;
 	text-align: right;
+	text-shadow: 0px 0px 1rem #DC62F4;
 }
 .char-sub-title {
 	color: white;
 	font-size: 2.6em;
 	position: absolute;
 	top: 20rem;
-	right: 50%;
+	right: 54%;
 	text-align: right;
 	font-family: "Trade Winds";
+	text-shadow: 0px 0px 1rem #DC62F4;
 }
 .char-desc {
 	color: white;
 	font-size: 1.5em;
 	position: absolute;
 	top: 32rem;
-	right: 50%;
-	width: 23rem;
-	text-align: center;
+	right: 54%;
+	width: 32rem;
+	text-align: right;
 }
 
 .slide-in {
