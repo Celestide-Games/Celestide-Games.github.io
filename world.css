@@ -20,12 +20,12 @@
 }
 .location-name {
 	font-size: 9em;
-	font-family: "Papyrus";
-	text-shadow: 0px 0px 1rem black;
+	font-family: "Trade Winds";
+	text-shadow: 0px 0px 1rem #DC62F4;
 }
 .location-desc {
 	font-size: 1.4em;
-	text-shadow: 0px 0px 1rem black;
+	text-shadow: 0px 0px 1rem #DC62F4;
 }
 
 .location {
@@ -38,7 +38,7 @@
 	border: 2px solid #141414;
 }
 .location.active, .location:hover {
-	background-color: red;
+	background-color: #DC62F4;
 }
 
 .slide img {
@@ -63,7 +63,7 @@
 	left: 0;
 	font-size: 0.2em;
 	text-align: left;
-	font-family: Poppins, Verdana, sans-serif;
+	font-family: Poppins, sans-serif;
 	top: 14rem;
 }
 .char-title > div {
@@ -72,6 +72,7 @@
 	text-align: center;
 	margin: 0;
 	margin-left: auto;
+	font-family: "Trade Winds";
 }
 .char-title hr {
 	margin: 1rem -20% 0 -20%;
@@ -84,7 +85,6 @@
 	top: -3rem;
 	right: 0%;
 	text-align: center;
-	font-family: Poppins, Verdana, sans-serif;
 }
 .char-name {
 	margin-left: -50%;

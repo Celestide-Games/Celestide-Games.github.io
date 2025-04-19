@@ -1,18 +1,28 @@
 .char-title {
 	font-size: 10em;
-	font-family: "Papyrus";
+	font-family: "Trade Winds";
 	position: absolute;
 	top: 6rem;
 	right: 54%;
 	text-align: right;
 }
-.char-desc {
+.char-sub-title {
 	color: white;
 	font-size: 2.6em;
 	position: absolute;
-	top: 30rem;
+	top: 20rem;
 	right: 50%;
 	text-align: right;
+	font-family: "Trade Winds";
+}
+.char-desc {
+	color: white;
+	font-size: 1.5em;
+	position: absolute;
+	top: 32rem;
+	right: 50%;
+	width: 23rem;
+	text-align: center;
 }
 
 .slide-in {
@@ -22,6 +32,7 @@
 
 .slideshow-container {
 	margin-top: calc(3rem + 6px);
+	overflow: hidden;
 }
 
 @keyframes slideIn {

@@ -1,7 +1,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: Poppins, Verdana, sans-serif;
+	font-family: Poppins, sans-serif;
 	background-color: #000;
 }
 
@@ -24,7 +24,6 @@ body, .navbar a {
 .navbar {
 	position: sticky;
 	top: 0px;
-	display: flex;
 	z-index: 1000;
 	
 	font-size: 1.2em;
